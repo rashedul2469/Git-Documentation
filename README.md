@@ -38,7 +38,7 @@ git checkout <id/branch_name>
 git remote -v
 ```
 
-### To See Connection
+### To See Branch
 ```bash
 git branch              (To see All branch name)
 ```
