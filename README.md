@@ -16,12 +16,12 @@ git config --local/global/system --unset user.name/user.email
 <img src="./Github1.png">
 <img src="./Github2.png">
 
-### Initialize GIT
+### Initialize Git
 ```bash
 git init
 ```
 
-### Check The Condition
+### Check Status
 ```bash
 git status              (To see Staging or Unstaging Status)
 git log                 (To see commit Status) 
@@ -30,7 +30,7 @@ git log --oneline       (To see commit id)
 
 ### Traverse Head
 ```bash
-git checkout <id/branch_name>
+git checkout <commit_id/branch_name>
 ```
 
 ### To See Connection
@@ -43,38 +43,38 @@ git remote -v
 git branch              (To see All branch name)
 ```
 
-### Working Directory To Stagging Directory And Vice Versa
+### Working Directory To Staging Directory And Vice Versa
 ```bash
-git add <fileame>                              (For single file)
+git add <filename>                              (For single file)
 git add <filename> <filename> ...              (For multiple file)
 git add .                                      (For all file)
 
-git rm -- cached <filename>                    (For single file)
-git rm -- cached <filename> <filename> ...     (For single file)
-git rm --cached -r .                           (For single file)
+git rm --cached <filename>                    (For single file)
+git rm --cached <filename> <filename> ...     (For multiple file)
+git rm --cached -r .                           (For all file)
 ```
 
 
-### Stagging Directory To Local Respitory And Vice Versa
+### Staging Directory To Local Repository And Vice Versa
 ```bash
-git commit -m "<Messeage>"            
-git commit -m "<Messeage>" -m "<Messeage>" -m "<Messeage>" ....
+git commit -m "<Message>"            
+git commit -m "<Message>" -m "<Message>" -m "<Message>" ....
 
-git reset --soft HEAD~1                        (To Stagging Directory)
+git reset --soft HEAD~1                        (To Staging Directory)
 git reset HEAD~1                               (To Working Directory)
 git reset --hard HEAD~1                        (Delete commit File)
 ```
-### Connection Established with Local Respitory
+### Connection Established with Local Repository
 ```bash
 git remote add <name> <url>
 ```
 
-### Local Respitory To Remote Respitory
+### Local Repository To Remote Repository
 ```bash
 git push -u <url_name> <branch_name>
 ```
 
-### Remote Respitory To Working Directory
+### Remote Repository To Working Directory
 ```bash
 git clone <url_name>
 ```
@@ -90,7 +90,7 @@ git merge <branch_name>                         (To merge Branch)
 ```bash
 git init
 git add .
-git commit -m "<Messeage>"
+git commit -m "<Message>"
 git remote add <name_url> <url>
 git push -u <name_url> <branch_name>
 ```
