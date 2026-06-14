@@ -96,6 +96,7 @@ Credential Manager → Windows Credentials → Remove GitHub-related info
 Remove entries like:
 
 github.com
+
 git:https://github.com
 
 Then push again. GitHub will ask you to authenticate in browser.
@@ -105,11 +106,13 @@ Then push again. GitHub will ask you to authenticate in browser.
 Use this if your commit username/email does not match your GitHub account.
 
 git config user.name "Your GitHub Name"
+
 git config user.email "your-github-email@example.com"
 
 Check local config:
 
 git config user.name
+
 git config user.email
 
 Use local config when the computer has multiple GitHub users.
