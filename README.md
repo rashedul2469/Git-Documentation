@@ -89,10 +89,10 @@ git merge <branch_name>                         (To merge Branch)
 
 ### Normal Frequently used Github Command
 
-## Step 1:
+#### Step 1:
 Credential Manager->Windows credentials->remove github info
 
-## Step 2:
+#### Step 2:
 change the local config if github account does not match with username and email
 
 ```bash
