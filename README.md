@@ -90,21 +90,61 @@ git merge <branch_name>                         (To merge Branch)
 ### Normal Frequently used Github Command
 
 #### Step 1:
-Credential Manager->Windows credentials->remove github info
+
+Credential Manager → Windows Credentials → Remove GitHub-related info
+
+Remove entries like:
+
+github.com
+git:https://github.com
+
+Then push again. GitHub will ask you to authenticate in browser.
 
 #### Step 2:
-change the local config if github account does not match with username and email
+
+Use this if your commit username/email does not match your GitHub account.
+
+git config user.name "Your GitHub Name"
+git config user.email "your-github-email@example.com"
+
+Check local config:
+
+git config user.name
+git config user.email
+
+Use local config when the computer has multiple GitHub users.
+
+#### step 3:
+
+If a new local project will be pushed to a new GitHub repository
 
 ```bash
 git init
-git add .
+
+git add .                   
 git commit -m "<Message>"
-git remote add <name_url> <url>
-git push -u <name_url> <branch_name>
+
+git remote add <name> <repository_url>
+git push -u <name/respitory_url> <branch_name>
 ```
 
+If the repository already exists on GitHub and you want to work on it
+
 ```bash
-git clone <url>
+git clone <repository_url>
+cd <repository_folder>
+
+git branch -a
+git checkout/switch <branch_name>
+git branch <create_branch_name>
+git checkout/switch <branch_name>
+git pull
+
+git add .
+git commit -m "<Message>"
+
+git pull
+git push -u <origin/respitory_url> <branch_name>
 ```
 
 
