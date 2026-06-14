@@ -40,7 +40,8 @@ git remote -v
 
 ### To See Branch
 ```bash
-git branch              (To see All branch name)
+git branch              (To see All local branch name)
+git branch -a           (To see All Remote branch name)
 ```
 
 ### Working Directory To Staging Directory And Vice Versa
@@ -87,6 +88,13 @@ git merge <branch_name>                         (To merge Branch)
 ```
 
 ### Normal Frequently used Github Command
+
+## Step 1:
+Credential Manager->Windows credentials->remove github info
+
+## Step 2:
+change the local config if github account does not match with username and email
+
 ```bash
 git init
 git add .
